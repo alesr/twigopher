@@ -1,0 +1,21 @@
+---
+sudo: false
+
+services:
+  - docker
+
+language: go
+
+go:
+  - tip
+
+before_install:
+  - docker build -t twigopher-test -f resources/test/Dockerfile .
+
+script:
+  - docker run --rm twigopher-test
+
+notifications:
+  on_success: always
+  email: false
+...
