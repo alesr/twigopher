@@ -1,2 +1,5 @@
 # twitter credentials
 twitter.yaml
+
+# editor
+.vscode
