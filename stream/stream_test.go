@@ -3,9 +3,8 @@ package stream
 import (
 	"bytes"
 	"fmt"
-	"testing"
-
 	"reflect"
+	"testing"
 
 	"github.com/alesr/twigopher/client"
 	"github.com/dghubble/go-twitter/twitter"
